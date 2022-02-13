@@ -98,3 +98,133 @@ DEPRECATION WARNING: ActiveModel::Errors#to_h is deprecated and will be removed 
 Please use `ActiveModel::Errors.to_hash` instead. The values in the hash
 returned by `ActiveModel::Errors.to_hash` is an array of error messages.
  (called from irb_binding at (irb):4)
+DEPRECATION WARNING: ActiveModel::Errors#to_h is deprecated and will be removed in Rails 6.2.
+Please use `ActiveModel::Errors.to_hash` instead. The values in the hash
+returned by `ActiveModel::Errors.to_hash` is an array of error messages.
+ (called from irb_binding at (irb):3)
+DEPRECATION WARNING: ActiveModel::Errors#to_h is deprecated and will be removed in Rails 6.2.
+Please use `ActiveModel::Errors.to_hash` instead. The values in the hash
+returned by `ActiveModel::Errors.to_hash` is an array of error messages.
+ (called from irb_binding at (irb):6)
+DEPRECATION WARNING: ActiveModel::Errors#to_h is deprecated and will be removed in Rails 6.2.
+Please use `ActiveModel::Errors.to_hash` instead. The values in the hash
+returned by `ActiveModel::Errors.to_hash` is an array of error messages.
+ (called from irb_binding at (irb):3)
+DEPRECATION WARNING: ActiveModel::Errors#to_h is deprecated and will be removed in Rails 6.2.
+Please use `ActiveModel::Errors.to_hash` instead. The values in the hash
+returned by `ActiveModel::Errors.to_hash` is an array of error messages.
+ (called from irb_binding at (irb):3)
+DEPRECATION WARNING: ActiveModel::Errors#to_h is deprecated and will be removed in Rails 6.2.
+Please use `ActiveModel::Errors.to_hash` instead. The values in the hash
+returned by `ActiveModel::Errors.to_hash` is an array of error messages.
+ (called from irb_binding at (irb):6)
+DEPRECATION WARNING: ActiveModel::Errors#to_h is deprecated and will be removed in Rails 6.2.
+Please use `ActiveModel::Errors.to_hash` instead. The values in the hash
+returned by `ActiveModel::Errors.to_hash` is an array of error messages.
+ (called from irb_binding at (irb):3)
+  [1m[35m (539.9ms)[0m  [1m[35mCREATE DATABASE "study" ENCODING = 'unicode'[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE DATABASE "study" ENCODING = 'unicode'[0m
+  [1m[35m (40.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (22.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7940990278334873445)[0m
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to User (20220213050347)
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (40.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying NOT NULL, "age" integer DEFAULT 0 NOT NULL, "profile" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (2.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20220213050347"]]
+  [1m[36mTRANSACTION (5.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (7.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (11.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-02-13 06:11:15.642549"], ["updated_at", "2022-02-13 06:11:15.642549"]]
+  [1m[36mTRANSACTION (4.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(7940990278334873445)[0m
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (2.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Hoge"], ["age", 2], ["created_at", "2022-02-13 06:12:44.497755"], ["updated_at", "2022-02-13 06:12:44.497755"]]
+  [1m[36mTRANSACTION (7.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "[1, 2, 3]"], ["age", 2], ["created_at", "2022-02-13 06:17:28.317842"], ["updated_at", "2022-02-13 06:17:28.317842"]]
+  [1m[36mTRANSACTION (5.3ms)[0m  [1m[35mCOMMIT[0m
+DEPRECATION WARNING: ActiveModel::Errors#to_h is deprecated and will be removed in Rails 6.2.
+Please use `ActiveModel::Errors.to_hash` instead. The values in the hash
+returned by `ActiveModel::Errors.to_hash` is an array of error messages.
+ (called from irb_binding at (irb):3)
+DEPRECATION WARNING: ActiveModel::Errors#to_h is deprecated and will be removed in Rails 6.2.
+Please use `ActiveModel::Errors.to_hash` instead. The values in the hash
+returned by `ActiveModel::Errors.to_hash` is an array of error messages.
+ (called from irb_binding at (irb):6)
+DEPRECATION WARNING: ActiveModel::Errors#to_h is deprecated and will be removed in Rails 6.2.
+Please use `ActiveModel::Errors.to_hash` instead. The values in the hash
+returned by `ActiveModel::Errors.to_hash` is an array of error messages.
+ (called from irb_binding at (irb):9)
+DEPRECATION WARNING: ActiveModel::Errors#to_h is deprecated and will be removed in Rails 6.2.
+Please use `ActiveModel::Errors.to_hash` instead. The values in the hash
+returned by `ActiveModel::Errors.to_hash` is an array of error messages.
+ (called from irb_binding at (irb):12)
+DEPRECATION WARNING: ActiveModel::Errors#to_h is deprecated and will be removed in Rails 6.2.
+Please use `ActiveModel::Errors.to_hash` instead. The values in the hash
+returned by `ActiveModel::Errors.to_hash` is an array of error messages.
+ (called from rescue in irb_binding at (irb):19)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "2"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" IN ($1, $2, $3) LIMIT $4[0m  [["name", "1"], ["name", "2"], ["name", "3"], ["LIMIT", 1]]
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."age" = $1 LIMIT $2[0m  [["age", 2], ["LIMIT", 1]]
+DEPRECATION WARNING: ActiveModel::Errors#to_h is deprecated and will be removed in Rails 6.2.
+Please use `ActiveModel::Errors.to_hash` instead. The values in the hash
+returned by `ActiveModel::Errors.to_hash` is an array of error messages.
+ (called from irb_binding at (irb):3)
+DEPRECATION WARNING: ActiveModel::Errors#to_h is deprecated and will be removed in Rails 6.2.
+Please use `ActiveModel::Errors.to_hash` instead. The values in the hash
+returned by `ActiveModel::Errors.to_hash` is an array of error messages.
+ (called from irb_binding at (irb):3)
+DEPRECATION WARNING: ActiveModel::Errors#to_h is deprecated and will be removed in Rails 6.2.
+Please use `ActiveModel::Errors.to_hash` instead. The values in the hash
+returned by `ActiveModel::Errors.to_hash` is an array of error messages.
+ (called from irb_binding at (irb):3)
+DEPRECATION WARNING: ActiveModel::Errors#to_h is deprecated and will be removed in Rails 6.2.
+Please use `ActiveModel::Errors.to_hash` instead. The values in the hash
+returned by `ActiveModel::Errors.to_hash` is an array of error messages.
+ (called from rescue in irb_binding at (irb):6)
+DEPRECATION WARNING: ActiveModel::Errors#to_h is deprecated and will be removed in Rails 6.2.
+Please use `ActiveModel::Errors.to_hash` instead. The values in the hash
+returned by `ActiveModel::Errors.to_hash` is an array of error messages.
+ (called from irb_binding at (irb):2)
+DEPRECATION WARNING: ActiveModel::Errors#to_h is deprecated and will be removed in Rails 6.2.
+Please use `ActiveModel::Errors.to_hash` instead. The values in the hash
+returned by `ActiveModel::Errors.to_hash` is an array of error messages.
+ (called from irb_binding at (irb):4)
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (18.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "22"], ["age", 15], ["created_at", "2022-02-13 08:00:47.797037"], ["updated_at", "2022-02-13 08:00:47.797037"]]
+  [1m[36mTRANSACTION (22.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "22"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Create (5.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "15"], ["age", 15], ["created_at", "2022-02-13 08:02:35.870173"], ["updated_at", "2022-02-13 08:02:35.870173"]]
+  [1m[36mTRANSACTION (7.8ms)[0m  [1m[35mCOMMIT[0m
+DEPRECATION WARNING: ActiveModel::Errors#to_h is deprecated and will be removed in Rails 6.2.
+Please use `ActiveModel::Errors.to_hash` instead. The values in the hash
+returned by `ActiveModel::Errors.to_hash` is an array of error messages.
+ (called from irb_binding at (irb):3)
+DEPRECATION WARNING: ActiveModel::Errors#to_h is deprecated and will be removed in Rails 6.2.
+Please use `ActiveModel::Errors.to_hash` instead. The values in the hash
+returned by `ActiveModel::Errors.to_hash` is an array of error messages.
+ (called from irb_binding at (irb):6)
+DEPRECATION WARNING: ActiveModel::Errors#to_h is deprecated and will be removed in Rails 6.2.
+Please use `ActiveModel::Errors.to_hash` instead. The values in the hash
+returned by `ActiveModel::Errors.to_hash` is an array of error messages.
+ (called from irb_binding at (irb):9)
+DEPRECATION WARNING: ActiveModel::Errors#to_h is deprecated and will be removed in Rails 6.2.
+Please use `ActiveModel::Errors.to_hash` instead. The values in the hash
+returned by `ActiveModel::Errors.to_hash` is an array of error messages.
+ (called from irb_binding at (irb):4)
+DEPRECATION WARNING: ActiveModel::Errors#to_h is deprecated and will be removed in Rails 6.2.
+Please use `ActiveModel::Errors.to_hash` instead. The values in the hash
+returned by `ActiveModel::Errors.to_hash` is an array of error messages.
+ (called from irb_binding at (irb):7)
+DEPRECATION WARNING: ActiveModel::Errors#to_h is deprecated and will be removed in Rails 6.2.
+Please use `ActiveModel::Errors.to_hash` instead. The values in the hash
+returned by `ActiveModel::Errors.to_hash` is an array of error messages.
+ (called from irb_binding at (irb):3)
+DEPRECATION WARNING: ActiveModel::Errors#to_h is deprecated and will be removed in Rails 6.2.
+Please use `ActiveModel::Errors.to_hash` instead. The values in the hash
+returned by `ActiveModel::Errors.to_hash` is an array of error messages.
+ (called from irb_binding at (irb):3)

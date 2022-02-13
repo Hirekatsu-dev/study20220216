@@ -1,6 +1,6 @@
 class SampleForm
   include ActiveModel::Model
-  attr_accessor :profile
+  attr_accessor :id_array
 
-  validates :profile, allow_nil: false, length: { maximum: 500 }
+  validates :id_array, allow_nil: false, array: true
 end
